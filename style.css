@@ -1,0 +1,166 @@
+/*Paleta EFC7C2 FFE5D4 7293A0 413C58 694F5D */
+
+body {
+    margin: 0px; 
+    font-family: Roboto"; "Lato", sans-serif;
+}
+
+nav {
+    background-color: #EFC7C2;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Roboto";
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    color: #413c58;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color:#FFE5D4;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    height: 0px;
+ }
+
+h1, h3 {
+    color: #694F5D;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h2 {
+    color: #7293a0;
+    margin-top: 50px;
+}
+
+footer {
+    font-family: "Roboto";
+    background-color: #EFC7C2;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+p {
+    line-height: 30px;
+}
+span {
+    font-weight: bold;
+}
+
+.div-main {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.div-main-content {
+    margin: 50px;
+}
+.div-bloque1 {
+    background-color: #FFE5D4;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-imagen {
+    height: 300px;
+    margin: 40px; 
+    margin-left: 10px;
+}
+.div-h1 {
+    max-width: 50%;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.div-trabajos {
+    background-color: #FFE5D4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.trabajo {
+    border:#EFC7C2 solid 10px;
+    background-color: white;
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    padding:50px;
+    margin: 50px;
+    color:#FFE5D4;
+}
+
+.imagenes-trabajos {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+/*  Media Queries Tablet*/
+
+@media (min-width:576px) and (max-width:1024px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .div-h1 {
+        padding-right: 30px;
+    }
+    
+    .div-trabajos {
+        align-items: center;
+        padding: 20px;
+    }
+    .trabajo { 
+        margin: 10px;
+        padding: 25px;
+        display:inline-block;
+    }
+}
+
+/*  Media Queries Mobile*/
+@media (max-width:575px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .div-bloque1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-trabajos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+
+    .trabajo { 
+        margin: 10px;
+    }
+}
+
+
